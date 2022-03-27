@@ -35,6 +35,24 @@
             background-color: yellow;
         }
     }
+
+    button {
+        border-radius: 5px;
+        color: white;
+        background-color: #0F5897;
+        padding: 5px 10px 8px 10px;
+    }
+
+    button:hover {
+        animation-name: background-color;
+        animation-duration: 500ms;
+    }
+
+    @keyframes background-color {
+        100% {
+            background-color: #33c4e9;
+        }
+    }
 </style>
 
 <body>
@@ -45,6 +63,12 @@
 -->
     <div id="rect"></div>
 
+
+    <!--   
+   CSS @keyframes para alterar a propriedade background-color do elemento button para que se torne #33c4e9 quando um usuário passar o cursor do mouse sobre ele. A regra @keyframes deve ter apenas um frame de 100%.
+    
+  -->
+    <button>Register</button>
 </body>
 
 </html>
