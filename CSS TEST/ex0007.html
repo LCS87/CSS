@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar formas complexas usando CSS e HTML</title>
+</head>
+<style>
+    .heart {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: pink;
+        height: 50px;
+        width: 50px;
+        transform: rotate(-45deg);
+    }
+
+    .heart::after {
+        background-color: pink;
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        left: 25px;
+    }
+
+    .heart::before {
+        content: "";
+        background-color: pink;
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        left: 0px;
+    }
+</style>
+
+
+<body>
+
+    <!--  
+Uma das formas mais populares do mundo é a forma de coração e, neste desafio, você criará um usando CSS puro. Mas primeiro, você precisa entender os pseudo-elementos ::before e ::after. ::before cria um pseudoelemento que é o primeiro filho do elemento selecionado; ::after cria um pseudoelemento que é o último filho do elemento selecionado. No exemplo a seguir, um pseudo-elemento ::before é usado para adicionar um retângulo a um elemento com a classe heart:
+
+Para que os pseudo-elementos ::before e ::after funcionem corretamente, eles devem ter a propriedade content definida. Esta propriedade é geralmente usada para adicionar coisas como uma foto ou texto ao elemento selecionado. Quando os pseudo-elementos ::before e ::after são usados para criar formas, a propriedade content ainda é necessária, mas é definida com um valor vazio. No exemplo acima, o elemento com a classe heart tem um pseudo-elemento ::before que produz um retângulo amarelo com altura e largura de 50px e 70px, respectivamente. Este retângulo tem cantos arredondados por conta da propriedade border-radius de 25% e está posicionado absolutamente 5px a esquerda e 50px acima do topo do elemento.
+    -->
+    <div class="heart"></div>
+
+
+</body>
+
+</html>
